@@ -22,3 +22,5 @@ SOTA Performance: Achieved 69.73% mIoU and 74.32% Dice on the PI-CAI dataset.
 | RollingUnet  | 43.31    | 54.65    | 99.66           | 0.21    |
 | U-KAN        | 66.82    | 72.94    | 99.66           | 0.21    |
 | MyGO†        | 69.73    | 74.32    | 99.87           | 0.13    |
+
+Code come soon
