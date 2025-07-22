@@ -4,7 +4,7 @@ MyGO is a deep learning model for prostate cancer MRI segmentation that avoids s
 
 🎯 Highlights
 
-Pixel Fulcrum Module: Learns sparse anchors to capture semantic context.
+Pixel Anchor Module: Learns sparse anchors to capture semantic context.
 
 Top-k Attention: Selects the most relevant anchor features.
 
@@ -15,6 +15,7 @@ U-KAN Framework: Strong modeling for high-order nonlinear features.
 SOTA Performance: Achieved 69.73% mIoU and 74.32% Dice on the PI-CAI dataset.
 
 ![Model Architecture](fig2.png)
+![Model Architecture](fig3.png)
 
 | Method       | mIoU (%) | Dice (%) | Specificity (%) | FPR (%) |
 |--------------|----------|----------|-----------------|---------|
