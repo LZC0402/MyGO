@@ -15,7 +15,7 @@ U-KAN Framework: Strong modeling for high-order nonlinear features.
 SOTA Performance: Achieved 69.73% mIoU and 74.32% Dice on the PI-CAI dataset.
 
 ![Model Architecture](fig2.png)
-![Model Architecture](fig3.png)
+![Model Architecture](fig3.jpg)
 
 | Method       | mIoU (%) | Dice (%) | Specificity (%) | FPR (%) |
 |--------------|----------|----------|-----------------|---------|
