@@ -28,19 +28,18 @@ SOTA Performance: Achieved 69.73% mIoU and 74.32% Dice on the PI-CAI dataset.
 
 You can download the checkpoint from [checkpoints/ours.pth](checkpoints/ours.pth).
 
-If you already have the original inference code, place this file at the checkpoint path used by your inference script. The matching model is constructed as follows:
+## Run the notebook
 
-```python
-import torch
-from archs import UKAN
+You can run [inference.ipynb](inference.ipynb) in VS Code or Jupyter.
 
-model = UKAN(1, 3, False, embed_dims=[128, 160, 256])
-state = torch.load("checkpoints/ours.pth", map_location="cpu", weights_only=True)
-model.load_state_dict(state, strict=True)
-model.eval()
-```
+1. Download or clone this repository and open the notebook.
+2. Select a Python 3.12 kernel. Install the dependencies listed in the first code cell, then restart the kernel.
+3. Set ROOT to your MyGO folder and DATA_ROOT to the prepared data folder containing images/ and masks/0/.
+4. Select **Run All**. The notebook verifies the input files, loads the checkpoint, runs CPU inference, and displays an example prediction.
+5. Find the CSV and JSON results in local_results/.
 
-This loads the checkpoint with its original architecture. Running image inference also requires the matching preprocessing and model code.
+The notebook includes the model definitions required by this checkpoint. It has been tested on the prepared 256-by-256 PNG inputs for PI-CAI patients 11256 and 11382.
 
-Model code, inference notebook, dataset setup instructions, and further documentation: **Coming soon**.
+You can find these patients in MR-images7.zip and their labels in label_lesions.zip in the [public dataset repository](https://github.com/LZC0402/Dataset). The public PNGs have different dimensions and filenames. Conversion instructions for reproducing the verified inputs are **Coming soon**; this notebook currently requires the prepared data described inside the notebook.
 
+Further code and documentation: **Coming soon**.
